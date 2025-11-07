@@ -26,27 +26,26 @@ class ColorChangerState extends State<ColorChanger> {
   int blue = 109;
   int directionIndex = 0;
 
-  // ✅ Corrected directions
   final List<Map<String, dynamic>> directions = [
     {
       'name': 'Vertical',
-      'begin': Alignment.topCenter,
-      'end': Alignment.bottomCenter,
-    },
-    {
-      'name': 'Horizontal',
       'begin': Alignment.centerLeft,
       'end': Alignment.centerRight,
     },
     {
+      'name': 'Horizontal',
+      'begin': Alignment.topCenter,
+      'end': Alignment.bottomCenter,
+    },
+    {
       'name': 'Left → Right',
-      'begin': Alignment.topLeft,
-      'end': Alignment.bottomRight,
+      'begin': Alignment.topRight,
+      'end': Alignment.bottomLeft,
     },
     {
       'name': 'Right → Left',
-      'begin': Alignment.bottomRight,
-      'end': Alignment.topLeft,
+      'begin': Alignment.topLeft,
+      'end': Alignment.bottomRight,
     },
   ];
 
